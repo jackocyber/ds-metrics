@@ -1,0 +1,39 @@
+---
+title: "Applications of Econometrics and Data Science Methods Pset1"
+author: "Jack Ogle"
+output:
+  pdf_document:
+    keep_tex: true
+header-includes:
+   - \usepackage{dcolumn}
+   - \usepackage{float}
+classoption: landscape
+geometry: margin=1in
+fontsize: 12pt
+---
+
+Problem 1
+(a) 
+
+Propose a sequence of random variables that converges in probability to p. This sequence must be a function that maps sample sizes (i.e. natural numbers) to random variables.
+Hint: Recall the weak law of large numbers.
+
+From the Law of Large numbers and the Central Limit Theorem we know that a sequence of random variables ${\theta_N }$ converges in probability to ${\theta}$ if for any ${\epsilon} > 0$ and ${\delta} > 0$ there exists ${N^*} = N^*(\epsilon, \delta)$ such that for all ${N > N^*}$ \\
+
+Where $\theta_N$ is a function of $(y_i, X_i, i = 1,...N)$ \\
+
+$$
+Pr(|\theta_N-\theta|<\epsilon) >1-\delta
+$$
+If the limit exists we write that $$p\lim_{N\to \infty}\theta_N = \theta$$ or $\theta_N $ converges in probability to $\theta$. And because p is the percentage of COVID-19 infected in Chicago we also know that it has a Bernoulli distribution. Our end goal is to estimate the number of total test kits needed for the entire population of Chicago. Therefore we want to estimate the postitivity rate of Chicago. We can't observe the entire population, but we can observe a sample. We use the sample to estimate p and we know that through the law of large numbers and the central limit theorem if you substitute $\theta$ for p. Our sample $Pn$ will converge in probability to $P$. \\
+
+(b)
+
+
+(c)
+(d)
+(e)
+(f)
+(g)
+(h)
+

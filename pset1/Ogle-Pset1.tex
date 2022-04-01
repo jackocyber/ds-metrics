@@ -1,0 +1,115 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  12pt,
+  landscape]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Applications of Econometrics and Data Science Methods Pset1},
+  pdfauthor={Jack Ogle},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{dcolumn}
+\usepackage{float}
+
+\title{Applications of Econometrics and Data Science Methods Pset1}
+\author{Jack Ogle}
+\date{}
+
+\begin{document}
+\maketitle
+
+Problem 1 (a)
+
+Propose a sequence of random variables that converges in probability to
+p.~This sequence must be a function that maps sample sizes (i.e.~natural
+numbers) to random variables. Hint: Recall the weak law of large
+numbers.
+
+From the Law of Large numbers and the Central Limit Theorem we know that
+a sequence of random variables \({\theta_N }\) converges in probability
+to \({\theta}\) if for any \({\epsilon} > 0\) and \({\delta} > 0\) there
+exists \({N^*} = N^*(\epsilon, \delta)\) such that for all \({N > N^*}\)
+\textbackslash{}
+
+Where \(\theta_N\) is a function of \((y_i, X_i, i = 1,...N)\)
+\textbackslash{}
+
+\[
+Pr(|\theta_N-\theta|<\epsilon) >1-\delta
+\] If the limit exists we write that
+\[p\lim_{N\to \infty}\theta_N = \theta\] or \$\theta\_N \$ converges in
+probability to \(\theta\). And because p is the percentage of COVID-19
+infected in Chicago we also know that it has a Bernoulli distribution.
+Our end goal is to estimate the number of total test kits needed for the
+entire population of Chicago. Therefore we want to estimate the
+postitivity rate of Chicago. We can't observe the entire population, but
+we can observe a sample. We use the sample to estimate p and we know
+that through the law of large numbers and the central limit theorem if
+you substitute \(\theta\) for p.~Our sample \(Pn\) will converge in
+probability to \(P\). \textbackslash{}
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\setcounter{enumi}{1}
+\item
+\item
+\item
+\item
+\item
+\item
+\item
+\end{enumerate}
+
+\end{document}
