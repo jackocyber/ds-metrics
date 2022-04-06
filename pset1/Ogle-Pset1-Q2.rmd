@@ -1,0 +1,53 @@
+---
+output:
+  pdf_document:
+    keep_tex: true
+header-includes:
+   - \usepackage{dcolumn}
+   - \usepackage{float}
+   - \usepackage{graphicx}
+   - \usepackage{amsmath}
+classoption: landscape
+geometry: margin=1in
+fontsize: 12pt
+---
+
+![](/users/matthewogle/ds-metrics/pset1/2a.png)
+![](/users/matthewogle/ds-metrics/pset1/2b.png)
+
+(c)
+
+No. Given that we know $\beta_0$ is the output of a regression using OLS, it is the result of a minimization problem so there should not be any other coefficient (not equal to 0) that also satisfies the equation.
+
+
+(d)
+
+
+i)
+
+Y is wages 
+
+
+ii)
+
+With in X there are two explanatory variables:
+
+$X_1$ is age
+
+$X_2$ is the years of experience in the workforce
+
+iii)
+
+$X_1$ (Age) has an interesting relationship with wages because as you get older, you tend to have spent longer at any given job or company, and you are also seen as more mature and wise. This loyalty and those respected traits usually result in higher wages.
+
+$X_2$ (Experience) also has an interesting relationship with wages because the more experience you have, the more time you spend perfecting the skills related to the field. If you have spent a longer time within a certain industry too, you are also likely to be seen as more capable and worthy of promotions within the industry too. These factors both make one a more attractive employee, and typically, a more highly paid employee as well.
+
+iv)
+
+It is unlikely that, even knowing the probability distribution of (X,Y), we could measure the “true” population regression coefficient. Regressions can never truly measure the exact coefficient, but just do their best to estimate. However, because there is multicollinearity in our model, it is even more difficult to measure the “true” population regression coefficient. With multicollinearity, there is less independent variation for our explanatory variables, ie. we can't see the effect of age without the effect of experience (and vice versa). The estimators for age and experience are in a sense “diluted” as their correlation means the effect of age on wage likely captures a portion of the effect of experience on wage because it is hard to find changes in age without corresponding changes in experience (and vice versa). For example we might learn that years of education and years of experience are both positively correlated with wages. But because the variance of the estimators are high we don't know exactly how much each contributes to increasing or decreasing wages.
+
+
+Problem 3
+
+![](/users/matthewogle/ds-metrics/pset1/3a.png)
+![](/users/matthewogle/ds-metrics/pset1/3b.png)
